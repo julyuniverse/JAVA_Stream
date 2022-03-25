@@ -57,6 +57,18 @@ public class IntArrayStreamTest {
 
         // 결과
         // 6
+
+        List<Integer> integerList = new ArrayList<>();
+        integerList.add(11);
+        integerList.add(44);
+        integerList.add(12);
+        integerList.add(63);
+        integerList.add(22);
+        int sum2 = integerList.stream().mapToInt(s -> s.intValue()).sum();
+        System.out.println(sum2);
+        
+        // 결과
+        // 152
     }
 }
 ```
